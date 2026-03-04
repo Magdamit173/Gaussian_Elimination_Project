@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Gauss Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gaussian Matrix Solver</h1>
+        <p>Complete Pivoting Method</p>
+
+        <div class="config-section">
+            <label for="matrixSize">Matrix Size (N x N):</label>
+            <input type="number" id="matrixSize" value="3" min="2" max="10">
+            <button id="generateBtn">Generate Matrix</button>
+        </div>
+
+        <div class="matrix-wrapper">
+            <div id="matrixInputContainer" class="matrix-grid"></div>
+        </div>
+
+        <div class="controls">
+            <button id="solveBtn" class="primary-btn">Solve System</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+
+        <div id="outputSection" class="output-section">
+            <h2>Solution Steps</h2>
+            <div id="stepsLog" class="steps-log"></div>
+            <div id="finalResult" class="final-result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
