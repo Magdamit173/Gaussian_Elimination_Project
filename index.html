@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Gauss Solver</title>
+    <title>Gaussian Matrix Solver</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,12 +22,13 @@
         </div>
 
         <div class="controls">
-            <button id="solveBtn" class="primary-btn">Solve System</button>
+            <button id="solveBtn">Solve System</button>
             <button id="resetBtn">Reset</button>
         </div>
 
         <div id="outputSection" class="output-section">
             <h2>Solution Steps</h2>
+            <button id="copyLogBtn">Copy Terminal Log</button>
             <div id="stepsLog" class="steps-log"></div>
             <div id="finalResult" class="final-result"></div>
         </div>
