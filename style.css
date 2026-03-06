@@ -115,6 +115,17 @@ p { color: var(--text-light); margin-bottom: 2rem; }
     white-space: pre;
 }
 
+.step-block div {
+    transition: background-color 0.3s ease;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.step-block b, .step-block strong {
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+}
+
+
 .final-result {
     margin-top: 1.5rem;
     padding: 1.5rem;
@@ -195,3 +206,14 @@ button {
     scrollbar-width: thin;
     scrollbar-color: #cbd5e1 transparent;
 }
+
+/* Highlight for Swapping: Outgoing */
+.row-swap-out { background-color: rgba(239, 68, 68, 0.2); } /* Soft Red */
+/* Highlight for Swapping: Incoming */
+.row-swap-in { background-color: rgba(34, 197, 94, 0.2); }  /* Soft Green */
+/* Highlight for Pivot/Processing */
+.row-active { background-color: rgba(56, 189, 248, 0.15); } /* Soft Blue */
+/* Column Highlight */
+.col-highlight { border-left: 2px solid var(--accent); border-right: 2px solid var(--accent); }
+/* Max Value Highlight */
+.pivot-target { color: #fbbf24; font-weight: 900; text-decoration: underline; }
